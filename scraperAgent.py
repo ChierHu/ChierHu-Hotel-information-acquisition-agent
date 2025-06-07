@@ -52,6 +52,7 @@ async def main(urls):
         api_key=OPENAI_API_KEY,
         base_url=BASEURL,
     )
+    # Establish a batch processing task agent
     agents = [
         Agent(
             task=task,
